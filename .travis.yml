@@ -5,6 +5,11 @@ android:
     - platform-tools
     - tools
 
+    - build-tools-24.0.3
+    - build-tools-25.0.1
+    - android-25
+    - android-L
+
     # Additional components
     - extra-google-google_play_services
     - extra-google-m2repository
@@ -15,6 +20,10 @@ android:
     # if you need to run emulator(s) during your tests
     - sys-img-armeabi-v7a-android-22
     - sys-img-armeabi-v7a-android-17
+licenses:
+  - 'android-sdk-preview-license-.+'
+  - 'android-sdk-license-.+'
+  - 'google-gdk-license-.+'
 env:
   - _FORCE_LOGS=1 TEST=unit
   - _FORCE_LOGS=1 TEST=functional PLATFORM_VERSION=5.0.2 ANDROID_AVD=test
