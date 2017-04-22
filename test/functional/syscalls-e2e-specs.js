@@ -50,6 +50,7 @@ describe('System calls', function () {
     await adb.waitForDevice(2);
   });
   it('reboot should reboot the device', async function () {
+    this.timeout(MOCHA_LONG_TIMEOUT);
     await adb.reboot();
     await adb.ping();
   });
